@@ -1,42 +1,98 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
 header {
     text-align: center;
 }
 
 main {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: row;
+    align-self: start;
 }
 
 .form {
-    display: flex;
-    flex: 1;
-    flex-direction: column; 
-    min-width: 250px;
-    max-width: 500px;
+    width: auto;
+    min-width: 300px;
+    margin: 20px 0;
     padding: 20px;
     border: 1px solid #ccc;
     border-radius: 5px;
 }
 
-.form input, textarea {
-    margin: 10px 0;
-    padding: 10px; 
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    width: 90%;
-}   
-
-.form input[type="radio"] {
-    width: auto;
+form {
+    display: flex;
+    flex-direction: column;    
+    align-items: center;
+    width: 100%;
+    
 }
 
-.form input[type="submit"] {
+label {
+    margin-bottom: 10px;
+}
+
+input, textarea {
     padding: 10px;
-    border: none;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
     border-radius: 5px;
+}
+
+input[type="text"], input[type="email"], input[type="date"], textarea {
+    width: 100%;
+}
+
+fieldset {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+input[type="submit"] {
+    padding: 10px 20px;
     background-color: #007bff;
     color: white;
+    border: none;
+    border-radius: 5px;
     cursor: pointer;
-    width: auto;
+}
+
+.table {
+    width: 10%;
+    max-width: 500px;
+    margin: 20px 0;
+    border-collapse: collapse;
+    border: 1px solid #ccc;
+}
+
+table, th, td {
+    border: 1px solid #ccc;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: #f0f0f0;
+}
+
+td {
+    background-color: #f9f9f9;
+}
+
+
+footer {
+    text-align: center;
+    margin-top: 20px;
 }
