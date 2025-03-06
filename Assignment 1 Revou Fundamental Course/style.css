@@ -1,0 +1,42 @@
+header {
+    text-align: center;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form {
+    display: flex;
+    flex: 1;
+    flex-direction: column; 
+    min-width: 250px;
+    max-width: 500px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form input, textarea {
+    margin: 10px 0;
+    padding: 10px; 
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 90%;
+}   
+
+.form input[type="radio"] {
+    width: auto;
+}
+
+.form input[type="submit"] {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    width: auto;
+}
